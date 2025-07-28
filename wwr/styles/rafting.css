@@ -1,6 +1,6 @@
 :root {
     --primary-color: #8ec5f1;
-    --secondary-color: #c6ddf0;
+    --secondary-color: #e0eaf1;
     --accent1-color: #29a2ff;
     --accent2-color: #2a2b2a;
     --heading-font: 'Open Sans', sans-serif;
@@ -9,8 +9,28 @@
 
 
 header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header img {
+    width: 150px;
 }
 
 * {
@@ -58,6 +78,7 @@ article {
     display: block;
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 h1 {
@@ -79,9 +100,66 @@ h1 {
 article {
     background-color: var(--accent1-color);
     color: var(--accent2-color);
+    position: absolute;
+    bottom: 20px;
 }
 
 .socialmedia img {
     width: 50px;
 
+}
+
+.history-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.history-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.history-body img {
+    width: 200px;
+    height: auto;
+}
+
+.adventure-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.adventure-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.adventure-body img {
+    width: 150px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: end;
+    gap: 10px;
+}
+
+footer p {
+    grid-column: 2 / 3;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    grid-column: 3 / 4;
 }
