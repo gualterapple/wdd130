@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gualter dos Santos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact-us.css">
+    <title>White Water Rafting</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Site logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>📍 Address: 123 Riverbend Lane, Rapids City, RC 12345</p>
+            <p>📞 Phone: +1 (800) 123-4567</p>
+            <p>📧 Email: contact@gsrapidsrafting.com</p>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456!2d-122.4194152!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3b0b4e9873%3A0x7c3e0a9b5a2c85dd!2sRiverbend+Lane!5e0!3m2!1sen!2sus!4v1600000000000"
+                    width="100%" height="300" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="employees">
+            <h2>Our Team</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/happy-client.jpg" alt="Smiling employee 1">
+                    <figcaption>Gualter – Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happy-client.jpg" alt="Smiling employee 2">
+                    <figcaption>Santos – Safety Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happy-client.jpg" alt="Smiling employee 3">
+                    <figcaption>Sebastião – Customer Relations</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GS Rapids Rafting Co. | Gualter Santos</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
