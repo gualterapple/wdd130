@@ -49,6 +49,7 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 
@@ -58,10 +59,7 @@ h2 {
     color: var(--primary-color);
 }
 
-nav,
-p,
-section,
-article {
+nav {
     margin: 16px;
     padding: 8px;
 }
@@ -177,6 +175,10 @@ footer p {
     margin-bottom: 3rem;
 }
 
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
 .contact-info .map-container iframe {
     border: none;
     border-radius: 10px;
@@ -223,11 +225,6 @@ footer p {
     margin: 0 auto;
 }
 
-.contact-form label,
-.contact-form legend {
-    font-weight: 600;
-}
-
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
@@ -263,4 +260,100 @@ footer p {
 
 .contact-form button[type="submit"]:hover {
     background-color: #084a83;
+}
+
+/*Home page*/
+.newsletter {
+    color: var(--accent2-color);
+    margin-top: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.newsletter input,
+button {
+    min-height: 35px;
+}
+
+.cta {
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--accent2-color);
+
+}
+
+.cta p {
+
+    margin-bottom: 2rem;
+}
+
+
+.cta-button {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin-top: 20px !important;
+
+}
+
+.grid-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-info p {
+    color: var(--accent2-color);
+}
+
+.grid-info img {
+    max-width: 400px;
+    min-height: 300px;
+}
+
+/*TRIPS Page*/
+
+.trip-descriptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent2-color);
+    text-align: center;
+
+}
+
+.trip-descriptions img {
+    max-width: 200px;
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+
+.trips-table {
+    margin-top: 30px;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.trips-table th {
+    background-color: var(--primary-color);
+    color: #fff;
 }
